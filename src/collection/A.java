@@ -20,6 +20,12 @@ public class A {
         System.out.println(a1.x);
         System.out.println(a2);
         System.out.println(a);
+
+//        sum();
     }
+
+//    public void sum(){
+//        System.out.println(100);
+//    }
 
 }
