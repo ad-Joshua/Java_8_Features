@@ -28,16 +28,29 @@ public class Employee {
         this.name=name;
 
     }
-
+//    @Override
+//    public String toString() {
+//        return "Employee [id=" + id + ", name=" + name + "]";
+//    }
     public static void main(String[] args) {
-       // Employee e1 = new Employee(2, "Swaroop");
+        ArrayList<Integer> iz = new ArrayList<>();
+        iz.add(new Integer(10));
+        System.out.println(iz);
+
+        ArrayList<String> str = new ArrayList<>();
+        str.add(new String("Joshua"));
+        System.out.println(str);
+
+        // Employee e1 = new Employee(2, "Swaroop");
         //  emp.add(e1);
         ArrayList<Employee> al= new ArrayList<>();
         al.add(new Employee(1,"joshua"));
-
         al.add(new Employee(3, "john"));
         al.add(new Employee(4, "Michel"));
         al.add(new Employee(5, "kane"));
+
+
+       System.out.println(al);
 
         for (Employee employee:al) {
             System.out.print(employee.getId());

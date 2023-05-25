@@ -19,6 +19,7 @@ public class A {
         a.add(a2);
         System.out.println(a1.x);
         System.out.println(a2);
+        System.out.println(a);
     }
 
 }
