@@ -22,13 +22,16 @@ public class ValueOf1 {
         Date inFormat = inputFormat.parse(str3);
         String date = outputFormat.format(inFormat);
         System.out.println(date);
-        
+        //the output is a date as String not actual date
+
+        System.out.println(inFormat);
+        //the output is actual date
        
        //doing this by calling another method
        String tDate = "1997-02-15";
         String sDate = parseDate(tDate);
         System.out.println(sDate);
-
+        //the output is a date as String not actual date
 
     }
 
