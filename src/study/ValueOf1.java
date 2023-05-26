@@ -1,7 +1,11 @@
 package study;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class ValueOf1 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         String str1 = "100";
         String str2 = "200";
         int i1 = Integer.parseInt(str1);
@@ -10,5 +14,31 @@ public class ValueOf1 {
         System.out.println(i1);
         System.out.println(i2);
         System.out.println(s);
+        
+        // doing this in same method
+        String str3 = "1999-02-15";
+        SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date inFormat = inputFormat.parse(str3);
+        String date = outputFormat.format(inFormat);
+        System.out.println(date);
+        
+       
+       //doing this by calling another method
+       String tDate = "1997-02-15";
+        String sDate = parseDate(tDate);
+        System.out.println(sDate);
+
+
     }
+
+    private static String parseDate(String rDate) throws ParseException {
+        SimpleDateFormat indateFormat1 = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat outdateFormat1 = new SimpleDateFormat("yyyy-MM-dd");
+        Date dt = indateFormat1.parse(rDate);
+        String sdate = outdateFormat1.format(dt);
+        return sdate;
+
+    }
+
 }
