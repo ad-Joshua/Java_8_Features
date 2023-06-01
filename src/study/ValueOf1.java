@@ -8,9 +8,12 @@ public class ValueOf1 {
     public static void main(String[] args) throws ParseException {
         String str1 = "100";
         String str2 = "200";
+        int i = 300;
         int i1 = Integer.parseInt(str1);
         Integer i2 = Integer.valueOf(str2);
         String s = String.valueOf(i2);
+        String string = Integer.toString(i);
+        System.out.println(string);
         System.out.println(i1);
         System.out.println(i2);
         System.out.println(s);
