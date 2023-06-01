@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ValueOf1 {
+    int x = 10;
     public static void main(String[] args) throws ParseException {
         String str1 = "100";
         String str2 = "200";
@@ -35,6 +36,9 @@ public class ValueOf1 {
         String sDate = parseDate(tDate);
         System.out.println(sDate);
         //the output is a date as String not actual date
+        ValueOf1 v1 = new ValueOf1();
+        System.out.println(v1.x);
+        v1.test();
 
     }
 
@@ -45,6 +49,9 @@ public class ValueOf1 {
         String sdate = outdateFormat1.format(dt);
         return sdate;
 
+    }
+    public void test(){
+        System.out.println(this.x);
     }
 
 }
