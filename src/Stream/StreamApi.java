@@ -14,6 +14,7 @@ public class StreamApi {
 //        System.out.println(collect);
 
         List<String> list = Arrays.asList("Samuel", "Suresh", "Rohit", "Raina", "Sam", "Simran");
+        System.out.println(list.size());
         List<String> collect = list.stream().filter(s -> s.startsWith("S"))
                 .map(s -> s.toUpperCase())
                 .collect(Collectors.toList());

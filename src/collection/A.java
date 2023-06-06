@@ -16,10 +16,11 @@ public class A {
 
         ArrayList<A> a = new ArrayList();
         a.add(a1);
-        a.add(a2);
+        boolean add1 = a.add(a2);
         System.out.println(a1.x);
         System.out.println(a2);
         System.out.println(a);
+        System.out.println(add1);
 
 //        sum();
     }
