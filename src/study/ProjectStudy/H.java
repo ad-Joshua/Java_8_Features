@@ -8,7 +8,7 @@ public class H {
                ++x;    //x++ or ++x   both are similar
 
             }
-           // System.out.println(x);
+           //System.out.println(x);
         }
         System.out.println(x);
     }
