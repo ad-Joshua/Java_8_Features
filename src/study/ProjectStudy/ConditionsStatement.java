@@ -4,10 +4,10 @@ public class ConditionsStatement {
     int z =10;
     public static void main(String[] args) {
         boolean x = false;
-        int y =1;  //put 1 or 2
+        int y =2;  //put 1 or 2
         if (y==1){
             x=true;
-        }else if (y==2){
+        }else if (y==2) {          //else if/else
             x=false;
         }
 
