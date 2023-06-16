@@ -1,9 +1,9 @@
 package study.ProjectStudy;
 
-public class D {
+public class UnreachableCode {
     int x = 10;
     public static void main(String[] args) {
-     D da = new D();
+     UnreachableCode da = new UnreachableCode();
         boolean t1 = da.test();
         System.out.println(t1);
 
@@ -17,8 +17,8 @@ public class D {
         }else{
            for(int i=0; i<=9; i++){
                if(i==x)
-               return true;
-           }
+               return true;                          //If for loop doesn't exit in else and else has only return statement then the
+           }                                         //"return false;" will become unreachable code
         }
         return false;
     }

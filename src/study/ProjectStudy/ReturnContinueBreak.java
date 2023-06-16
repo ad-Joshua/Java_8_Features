@@ -1,6 +1,6 @@
 package study.ProjectStudy;
 
-public class J {
+public class ReturnContinueBreak {
     public static void main(String[] args) {
         int x = 1;
         if(x==1){
