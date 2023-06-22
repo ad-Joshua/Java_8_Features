@@ -12,7 +12,7 @@ public class B<T> {
 
     public void setListA(ArrayList<A> listA) {
         this.listA = listA;
-    }
+    }  //go to MainPS
 
     public int getTotalRecords() {
         return totalRecords;

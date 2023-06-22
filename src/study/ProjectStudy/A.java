@@ -6,7 +6,7 @@ public class A {
 
     public int getId() {
         return id;
-    }
+    }                                             //go to MAinPS
 
     public void setId(int id) {
         this.id = id;
